@@ -5,6 +5,10 @@ import * as ReactDOM from 'react-dom';
 
 import App from './components/App';
 
+const containerDiv = document.getElementById('root');
+const root = ReactDOM.createRoot(containerDiv);
+root.render(<App />);
+
 // class Hello extends React.Component {
 //   render() {
 //     const { name, age } = this.props;
@@ -19,7 +23,3 @@ import App from './components/App';
 
 //   return <h1>Hi {name}, your age is {age}!!!</h1>;
 // };
-
-const containerDiv = document.getElementById('root');
-const root = ReactDOM.createRoot(containerDiv);
-root.render(<App />);
